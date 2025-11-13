@@ -1,26 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Arima:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Playpen+Sans+Thai:wght@100..800&family=Style+Script&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: linear-gradient(to bottom, #050515, #110119);
+  --foreground: #ffffff;
+
+  --font-title: "Amarante", serif;
+  --font-hs: "EB Garamond", serif;
+  --font-body: "Arima", sans-serif;
+
+  --text-bright: 0px 4px 4px rgb(255, 255, 255, 0.25);
+  --text-sm-button: 0.875rem;
+  --text-lg-button: 1.1rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-hs);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+@layer base {
+  h2, h3, h4, h5, h6 {
+    font-family: var(--font-hs);
+    color: var(--foreground);
+    line-height: 1;
+  }
+
+  h1 {
+    @apply text-center justify-center font-bold text-4xl md:text-5xl bg-gradient-to-b from-[#D8BAEF] to-[#C8A1E8] bg-clip-text text-transparent;
+    text-shadow: 0px 4px 4px rgb(255, 255, 255, 0.25);
+    font-family: var(--text-title);
+    line-height: 1.2;
+  }
+
+  h2 {
+    @apply text-center justify-center font-bold text-3xl md:text-4xl;
+  }
 }
