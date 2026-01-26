@@ -14,7 +14,7 @@ export default function Button({
             <button className={`button ${variant} ${disabled ? "disabled" : ""}`} onClick={disabled ? undefined : onClick}>
                 {hasIcon && <span className="icon">{ icon }</span>}
                 {text && <span>{ text }</span>}
-                {children}
+                {children} Prueba Codespaces
             </button>
 
             <style>{`
