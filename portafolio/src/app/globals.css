@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Arima:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Playpen+Sans+Thai:wght@100..800&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Delius&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: linear-gradient(to bottom, #050515, #110119);
   --foreground: #ffffff;
 
-  --font-title: "Amarante", serif;
-  --font-hs: "EB Garamond", serif;
-  --font-body: "Arima", sans-serif;
+  --font-title: "Courgette", cursive;
+  --font-hs: "Courgette", cursive;
+  --font-body: "Delius", cursive;
 
   --text-bright: 0px 4px 4px rgb(255, 255, 255, 0.25);
   --text-sm-button: 0.875rem;

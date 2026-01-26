@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "@/components/ui/display/Button";
+import Button from "@/components/atomic/Button";
 
 export default function Home() {
   return (
